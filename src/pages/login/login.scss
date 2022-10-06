@@ -1,0 +1,88 @@
+.login {
+  height: 100vh;
+  width: 100vw;
+  background: linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 0) 0%,
+      rgba(0, 0, 0, 1) 120%
+    ),
+    url("https://s3-us-west-2.amazonaws.com/techvibes/wp-content/uploads/2017/04/24135159/Netflix-Background.jpg");
+  position: relative;
+  background-size: cover;
+  .top {
+    .wrapper {
+      padding: 20px 50px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+
+      img {
+        height: 50px;
+      }
+    }
+  }
+
+  .container {
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color: white;
+    opacity: 0.9;
+
+    form {
+      width: 300px;
+      height: 400px;
+      padding: 50px;
+      border-radius: 5px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      background-color: var(--main-color);
+
+      input {
+        height: 50px;
+        border-radius: 5px;
+        background-color: gray;
+        padding-left: 10px;
+        color: white;
+
+        &::placeholder {
+          color: lightgray;
+        }
+      }
+      button {
+        height: 50px;
+        border-radius: 5px;
+        background-color: rgb(228, 22, 22);
+        color: white;
+        cursor: pointer;
+        border: none;
+        font-size: 18px;
+        font-weight: 400;
+      }
+      span {
+        color: gray;
+        b {
+          color: white;
+          font-weight: 400;
+          cursor: pointer;
+        }
+      }
+
+      small {
+        color: gray;
+        b {
+          color: #0071eb;
+          cursor: pointer;
+          font-weight: 400;
+        }
+      }
+    }
+  }
+}
